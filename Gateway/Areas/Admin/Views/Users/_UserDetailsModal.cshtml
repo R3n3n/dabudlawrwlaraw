@@ -1,0 +1,49 @@
+﻿<style>
+    .badge-active-green {
+        background-color: #00c853;
+        color: #ffffff;
+        font-weight: 600;
+        padding: 6px 14px;
+        border-radius: 6px;
+    }
+
+    .badge-suspended-gray {
+        background-color: #6c757d;
+        color: #ffffff;
+        font-weight: 600;
+        padding: 6px 14px;
+        border-radius: 6px;
+    }
+</style>
+
+<div class="modal fade" id="userDetailsModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content modal-dark-content shadow-lg" style="background-color: #101625; color: #ffffff;">
+            <div class="modal-header border-0 pb-0">
+                <h5 class="modal-title fw-bold">User Details</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="mb-3">
+                    <div class="text-secondary small fw-medium">Email</div>
+                    <div id="detailEmail" class="fw-semibold text-white fs-6" data-testid="detail-email">-</div>
+                </div>
+                <div class="mb-3">
+                    <div class="text-secondary small fw-medium mb-1">Status</div>
+                    <span id="detailStatus" class="badge" data-testid="detail-status">-</span>
+                </div>
+                <div class="mb-3">
+                    <div class="text-secondary small fw-medium">Assigned Groups</div>
+                    <div id="detailGroups" class="fw-semibold text-white" data-testid="detail-groups">-</div>
+                </div>
+                <div class="mb-2">
+                    <div class="text-secondary small fw-medium">Last Logged in</div>
+                    <div id="detailLastLogin" class="fw-semibold text-white" data-testid="detail-last-login">-</div>
+                </div>
+            </div>
+            <div class="modal-footer border-0 pt-0">
+                <button type="button" class="btn btn-secondary px-4" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
